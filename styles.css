@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.8;
+}
+
+#logo {
+  margin: 10px;
+  height: 50px;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid seashell;
+}
+
+.top-right {
+  display: flex;
+}
+
+.top-right p {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+#backgroundImage {
+  width: 1200px;
+  height: 700px;
+  background-image: url('./images/img-mission-background.jpg');
+  background-size: contain;
+  background-size: 1200px 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.centreText {
+  align-self: center;
+}
+
+#teaMonthContainer {
+  display: flex;
+
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#teaMonthWidth {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+}
+
+.row2 {
+  display: flex;
+  justify-content: center;
+}
+
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.row2inner {
+  width: 650px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.teaImages {
+  height: 200px;
+  width: 300px;
+}
+
+.row1 div h3 {
+  text-align: center;
+}
+
+.row2inner div h3 {
+  text-align: center;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./images/img-locations-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 1200px 500px;
+}
+
+.container2inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 300px;
+  margin: 15px;
+  background-color: black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bold {
+  font-weight: bold;
+  opacity: 0.7;
+}
+.box h3 {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+  .row1 div,
+  .row2inner div {
+    width: 100%;
+  }
+
+  .teaImages {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  #teaMonthWidth {
+    width: 100%;
+  }
+  #boxes div {
+    width: 100%;
+  }
+}
